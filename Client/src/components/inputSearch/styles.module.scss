@@ -1,0 +1,128 @@
+.root {
+  width: 1100px;
+  height: 70px;
+  box-sizing: border-box;
+  padding: 4px;
+  transition: 0.3s;
+}
+
+.input {
+  width: 935px;
+  height: 25px;
+  outline: none;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #0f2248;
+  border: 0px;
+  background: none;
+}
+
+.input::placeholder {
+  color: #a7b7d8;
+}
+
+.input:focus {
+  color: #0555fe;
+}
+
+.input:focus {
+  &+.icon_left {
+    border: 1px solid black;
+  }
+}
+
+.icon_left {
+  width: 30px;
+  height: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.icon_right {
+  width: 70px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  cursor: pointer;
+  border-left: 1px solid #c5d1e9;
+  transition: 0.3s;
+}
+
+.icon_right:hover {
+  fill: #a7b7d8;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #c5d1e9;
+  background: #f3f8ff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  fill: #d5def0;
+}
+
+.root:focus-within {
+  background-color: rgba(5, 85, 254, 0.3);
+}
+
+.wrapper:focus-within {
+  border-color: #0555fe;
+}
+
+.icon_right_focused {
+  border-color: #0555fe;
+}
+
+.icon_right:focus-within {
+  background-color: #0f2248;
+}
+
+.input:focus+.icon_left {
+  background-color: red;
+}
+
+.icon_select {
+  fill: #0555fe;
+}
+
+.root:focus-within {
+  .icon_right {
+    border-color: #0555fe;
+  }
+
+  .icon_left {
+    fill: #0555fe;
+  }
+}
+
+.datefilter_text {
+  white-space: pre;
+  color: #0555FE;
+  display: none;
+}
+
+.filter_active {
+  padding: 0 15px;
+  width: 280px;
+  justify-content: space-evenly;
+  fill: #0555FE !important;
+}
+
+.filter_active .datefilter_text {
+  display: block;
+}

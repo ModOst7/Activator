@@ -1,0 +1,33 @@
+{
+  "name": "clint",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
+    "@tanstack/react-query": "^5.12.2",
+    "@tanstack/react-query-devtools": "^5.13.3",
+    "@types/react-datepicker": "^4.19.5",
+    "axios": "^1.6.2",
+    "next": "14.0.3",
+    "react": "^18",
+    "react-datepicker": "^5.0.0",
+    "react-dom": "^18",
+    "react-loader-spinner": "^6.1.0",
+    "react-redux": "^9.0.2",
+    "typescript-plugin-css-modules": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3",
+    "typescript": "^5"
+  }
+}

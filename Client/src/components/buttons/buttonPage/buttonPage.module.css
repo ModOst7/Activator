@@ -1,0 +1,81 @@
+.root {
+  height: 100%;
+  padding: 30px 32px;
+  display: inline;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+  color: #0f2248;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  fill: #0f2248;
+}
+
+.select {
+  background: #f1f5fa;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1) inset;
+  color: #0555fe;
+  fill: #0555fe;
+}
+
+.root:hover {
+  background: #f1f5fa;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1) inset;
+  color: #0555fe;
+  fill: #0555fe;
+}
+
+.root:hover .select_div {
+  opacity: 1;
+}
+
+.select_div {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 85, 254, 0) 0%,
+    #0555fe 50.52%,
+    rgba(5, 85, 254, 0) 100%
+  );
+  left: 0;
+  bottom: -1px;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.selected_div {
+  opacity: 1;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 16px;
+}
+
+
+@media (max-width: 360px) {
+  
+  .root {
+    flex-direction: column;
+    padding: 30px 0px;
+    font-size: 10px;
+    text-align: center;
+    justify-content: flex-start;
+  }
+
+  .icon {
+    margin-right: 0px;
+  }
+
+}

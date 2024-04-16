@@ -1,0 +1,58 @@
+.border {
+    min-width: 70px;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(80, 135, 254, 1), rgba(5, 85, 254, 1) 50%, rgba(80, 135, 254, 1) 100%);
+}
+
+.border:hover {
+    background: linear-gradient(135deg, rgba(80, 135, 254, 1), rgba(8, 72, 229, 1) 50%, rgba(80, 135, 254, 1) 100%);
+}
+
+.root {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    background: #0555FE;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.root:hover {
+    background: linear-gradient(180deg, #0555FE 0%, #0D34BE 247.14%);
+}
+
+.accept {
+    border: 2px solid #fff;
+    background: #0555fe;
+}
+
+.accept:hover {
+    border: 2px solid #fff;
+    background: linear-gradient(180deg, #0555fe 0%, #0d34be 247.14%);
+}
+
+.dismiss {
+    border: 2px solid #fff;
+    background: #e83939;
+}
+
+.dismiss:hover {
+    border: 2px solid #fff;
+    background: linear-gradient(180deg, #e83939 0%, #7e0b0b 247.14%);
+}
+
+
+
+.border_dismiss {}
+
+.border_accept {}

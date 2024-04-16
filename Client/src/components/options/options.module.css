@@ -1,0 +1,132 @@
+.wrapper {
+    padding: 3px;
+    transition: 0.5s;
+}
+
+.wrapper:has(.custom_select[open]) {
+    background: rgba(5, 85, 254, 0.3);
+}
+
+.custom_select {
+    position: relative;
+    width: 318px;
+}
+
+.custom_select[open] {
+    z-index: 1;
+}
+
+
+.custom_select {
+    height: 62px;
+    cursor: pointer;
+    border: 1px solid #c5d1e9;
+    background: #f3f8ff;
+    outline: none;
+    transition: 0.5s;
+
+    list-style: none;
+}
+
+.custom_select:hover {
+    border: 1px solid rgb(5, 85, 254);
+}
+
+.custom_select::-webkit-details-marker {
+    display: none;
+}
+
+.summary::-webkit-details-marker {
+    display: none;
+}
+
+.custom_select[open] .summary:before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.summary:after {
+    margin-top: 5px;
+    content: '';
+    display: inline-block;
+    float: right;
+    width: .5rem;
+    height: .5rem;
+    border-bottom: 1px solid currentColor;
+    border-left: 1px solid currentColor;
+    border-bottom-left-radius: 2px;
+    transform: rotate(-45deg) translate(50%, 0%);
+    transform-origin: center center;
+    transition: transform ease-in-out 100ms
+}
+
+.summary:focus {
+    outline: none;
+}
+
+.custom_select[open] .summary:after {
+    transform: rotate(135deg) translate(0%, 0%);
+}
+
+.option:nth-child(2) {
+    margin-top: 10px;
+}
+/* FAKE SELECT */
+
+.summary {
+    padding: 20px 30px 20px 25px;
+    counter-reset: radios;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.summary:before {
+    content: var(--selection);
+}
+
+
+
+.picked_option {
+    font-size: 16px;
+    color: #A7B7D8;
+}
+
+.option {
+    position: relative;
+    border: 1px solid #C5D1E9;
+    background: #F3F8FF;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+    margin-bottom: -1px;
+    padding: 20px 25px;
+    text-align: start;
+
+    font-size: 16px;
+}
+
+.option:hover {
+    color: #0555FE;
+}
+
+.picked {
+    color: #0F2248;
+}
+
+.empty_data {
+    border: 1px solid #ea7d3f;
+}
+
+@media (max-width: 360px) {
+    .custom_select {
+        width: 283px;
+    }
+}
+

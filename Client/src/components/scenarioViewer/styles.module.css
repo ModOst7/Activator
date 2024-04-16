@@ -1,0 +1,74 @@
+.wrapper {}
+
+.body {
+    max-height: 445px;
+    overflow-y: auto;
+}
+
+.body::-webkit-scrollbar-track {
+    background: none;
+}
+
+.body::-webkit-scrollbar {
+    width: 8px;
+    margin-left: 20px;
+}
+
+.body::-webkit-scrollbar-thumb {
+    background-color: #0555FE;
+    border-radius: 0px;
+}
+
+.header {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label {
+    font-weight: 600;
+}
+
+.add {
+    font-weight: 600;
+    display: flex;
+}
+
+.add_text {
+    margin-right: 20px;
+}
+
+.delimeter {
+    background: #E0E7F6;
+    height: 1px;
+}
+
+.empty {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 45vh;
+    color: #A7B7D8;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.scenario {
+    display: flex;
+    padding: 20px 30px;
+}
+
+.scenario_text {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.scenario_delimeter {
+    background: linear-gradient(90deg, rgba(216, 225, 243, 0.00) 0%, #D8E1F3 15.63%, #D8E1F3 83.85%, rgba(216, 225, 243, 0.00) 100%);
+    height: 1px;
+}

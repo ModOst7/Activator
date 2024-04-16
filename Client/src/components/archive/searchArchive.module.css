@@ -1,0 +1,76 @@
+.row:hover {
+    background-color: #F3F8FF;
+}
+
+.row:hover .td_status {
+    border-left: 1px solid #0555FE;
+}
+
+.row td {
+    border: 1px solid #D8E1F3;
+    padding: 20px 30px;
+}
+
+.inner {
+    display: flex;
+    justify-content: start;
+}
+
+.admin {
+    position: relative;
+}
+
+.admin_label {
+    position: absolute;
+    font-size: 15px;
+    color: #fff;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    top: -55px;
+    left: -47px;
+}
+
+.icons {
+    justify-content: space-evenly;
+    fill: #D5DEF0;
+    transition: 0.2s
+}
+
+.icons svg:hover {
+    fill: #A7B7D8;
+    cursor: pointer;
+}
+
+.password {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.password:hover .hidden_pass {
+    display: none;
+}
+
+.password:hover .visible_pass {
+    visibility: visible;
+}
+
+.visible_pass {
+    visibility: hidden;
+}
+
+.hidden_pass {
+    position: absolute;
+}
+
+.date {
+    justify-content: center;
+}
+
+@media (max-width: 360px) {
+    .row td {
+        border: 1px solid #D8E1F3;
+        padding: 5px 10px;
+    }
+}

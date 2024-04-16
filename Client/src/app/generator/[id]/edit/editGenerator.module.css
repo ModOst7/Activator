@@ -1,0 +1,53 @@
+.label {
+    margin-bottom: 20px;
+
+    font-weight: 600;
+}
+
+.trainer_id_block {
+    width: 27%;
+    font-weight: 600;
+}
+
+.trainer_vendor_block {
+    width: 27%;
+    margin-left: 25px;
+}
+
+.trainer_id {
+    padding: 20px;
+    border: 1px solid #C5D1E9;
+    background: #F3F8FF;
+}
+
+.trainer_name_block {
+    width: 45%;
+    margin-left: 25px;
+}
+
+.buttons_block {
+    display: flex;
+    justify-content: space-between;
+    width: 24%;
+    margin-left: 28px;
+    margin-top: 37px;
+    fill: white;
+}
+
+.input_name {
+    width: 100%;
+}
+
+.input_name input {
+    padding: 20px 25px 20px 25px;
+}
+
+.create_button {
+    width: 60%;
+    height: 62px;
+}
+
+.create_button.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}

@@ -1,0 +1,135 @@
+/* ОКНО ДОБАВЛЕНИЯ/ИЗМЕНЕНИЯ ПОЛЬЗОВАТЕЛЯ */
+.bg_screen {
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+.manage_window {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 918px;
+    height: 532px;
+    border: 1px solid #C5D1E9;
+    background: #F6FAFF;
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.10);
+
+    color: #0F2248;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.manage_window_title {
+    margin-top: 40px;
+}
+
+.manage_window_options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+}
+
+.option_one, .option_two, .option_three, .option_four {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 60px;
+}
+
+.option_three, .option_four {
+    margin-top: 25px;
+}
+
+.option_title {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.input input {
+    padding: 20px 70px 20px 25px;
+}
+
+.manage_window_button {
+    background-color: #0555FE;
+    width: 798px;
+    align-self: center;
+    margin-top: 40px;
+}
+
+.message {
+    margin-top: 15px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    transition: 0.5s;
+    height: 20px;
+    user-select: none;
+  }
+  
+  .message_empty_data {
+    color: #ea7d3f;
+    opacity: 1;
+  }
+  
+  .message_wrong_data {
+    color: #f25c53;
+    opacity: 1;
+  }
+
+  .close_window {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+  }
+
+  .opened {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .closed {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  @media (max-width: 360px) {
+    .manage_window {
+      width: 360px;
+      height: auto;
+    }
+
+    .manage_window_options {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .option_one {
+      width: 290px;
+    }
+
+    .option_three {
+      width: 289px;
+    }
+
+    .option_four {
+      width: 289px;
+    }
+
+  }

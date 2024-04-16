@@ -1,0 +1,37 @@
+.root {
+  width: 140px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.accept {
+  border: 2px solid #fff;
+  background: #0555fe;
+}
+
+.accept:hover {
+  border: 2px solid #fff;
+  background: linear-gradient(180deg, #0555fe 0%, #0d34be 247.14%);
+}
+
+.dismiss {
+  border: 2px solid #fff;
+  background: #e83939;
+}
+
+.dismiss:hover {
+  border: 2px solid #fff;
+  background: linear-gradient(180deg, #e83939 0%, #7e0b0b 247.14%);
+}

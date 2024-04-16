@@ -1,0 +1,145 @@
+.label {
+    margin-bottom: 20px;
+
+    font-weight: 600;
+}
+
+.trainer_id_block {
+    width: 20%;
+    font-weight: 600;
+}
+
+.trainer_id {
+    padding: 20px;
+    border: 1px solid #C5D1E9;
+    background: #F3F8FF;
+}
+
+.trainer_vendor {
+    padding: 30px;
+    border: 1px solid #C5D1E9;
+    background: #F3F8FF;
+}
+
+.trainer_name_block {
+    width: 75%;
+    margin-left: 25px;
+    pointer-events: none;
+}
+
+.buttons_block {
+    display: flex;
+    justify-content: space-between;
+    width: 13.5%;
+    margin-left: 20px;
+    margin-top: 37px;
+    fill: white;
+}
+
+.input_name {
+    width: 100%;
+}
+
+.input_name input::-webkit-outer-spin-button,
+.input_name input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input_name input {
+    padding: 20px 25px 20px 25px;
+}
+
+.input_name div:first-child {
+    display: none;
+}
+
+.edit_button {
+    height: 62px;
+}
+
+.credentials_block {
+    padding: 30px;
+}
+
+.block_one {
+    display: flex;
+}
+
+.license_type {
+    margin-right: 20px;
+}
+
+.license_text {
+    margin-bottom: 20px;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.code_text {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.input_client_code, .generated_code {
+    width: 100%;
+}
+
+.input_client_code input, .generated_code input {
+    padding: 20px 25px 20px 25px;
+}
+
+.error_label {
+    position: absolute;
+    font-size: 15px;
+    color: #fff;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    top: -55px;
+    left: -137px;
+}
+
+.error_label div:nth-child(1) {
+    width: 210px;
+}
+
+.error_label div:nth-child(2) {
+    margin-left: 90px;
+}
+
+.block_three {
+    margin-top: 25px;
+}
+
+.generate_button {
+    height: 62px;
+}
+
+.generate_button.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.block_four {
+    margin-top: 25px;
+}
+
+.generated_code {
+    pointer-events: none;
+}
+
+.generated_code div:nth-child(2) {
+    pointer-events: all !important;
+}
+
+.generated_key {
+    margin-bottom:20px;
+}
+
+.tags {
+    color: #A7B7D8;
+}

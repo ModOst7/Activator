@@ -1,0 +1,5 @@
+.root_header_children {
+  width: 100%;
+  height: calc(100% - 100px);
+  background: linear-gradient(180deg, #ebf2fc 0%, #f6faff 64.91%);
+}

@@ -1,0 +1,144 @@
+.root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    color: #0f2248;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.wrapper {
+    width: 1180px;
+    height: calc(100% - 31px);
+    margin-top: 40px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background: none;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 12px;
+    margin-left: 20px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background-color: #0555FE;
+    border-radius: 0px;
+}
+
+.content {
+    margin-left: 15px;
+    margin-bottom: 25px;
+
+    color: #2E426A;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+
+
+.details {
+    border-bottom: 1px solid #D8E1F3;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    transition: max-height 400ms ease-out;
+
+
+    max-height: 4rem;
+    /* Set a max-height value just enough to show the summary content */
+    overflow: hidden;
+    /* Hide the rest of the content */
+}
+
+.summary {
+    display: block;
+    /* This hides the summary's ::marker pseudo-element */
+}
+
+.input {
+    display: none;
+    /* Hide the checkbox element */
+}
+
+/* <label> element to check the checkbox */
+.label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    height: 4rem;
+    color: #0F2248;
+
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    /* This height value must be equal to max-height value of <details> element  */
+}
+
+.label:hover {
+    cursor: pointer;
+}
+
+.label::before {
+    left: 97%;
+    position: absolute;
+    content: "+";
+    font-size: 2.5rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    transition: rotate 200ms 400ms ease-out;
+}
+
+/*
+div.content {
+    padding: 0 10px;
+    border: 2px solid #888;
+}*/
+
+/* Here you can choose two approaches to animate <details> element:
+    1) Use adjacent sibling combinator (+)
+    2) Use :has() pseudo-class, but this might not work in Firefox.
+  */
+
+.input:checked+.details,
+.details:has(input:checked) {
+    max-height: 800px;
+    /* Set a max-height value enough to show all the content */
+}
+
+.input:checked+.details label::before,
+.details:has(input:checked) .label::before {
+    /*rotate: 90deg;*/
+    content: "–";
+    transition: rotate 200ms ease-out;
+}
+
+.detail_one, .detail_two, .detail_three, .detail_four, .detail_five, .detail_six {
+    background: none;
+}

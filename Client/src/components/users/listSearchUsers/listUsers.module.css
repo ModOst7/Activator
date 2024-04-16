@@ -1,0 +1,108 @@
+.users_list {
+  width: 100%;
+  margin-top: 30px;
+  background: #F6FAFF;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.04);
+  height: 550px;
+  overflow-y: auto;
+}
+
+.users_list::-webkit-scrollbar-track {
+  background: none;
+}
+
+.users_list::-webkit-scrollbar {
+  width: 12px;
+  margin-left: 20px;
+}
+
+.users_list::-webkit-scrollbar-thumb {
+  background-color: #0555FE;
+  border-radius: 0px;
+}
+
+.users_list table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #0F2248;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.thead,
+.thead tr {
+  z-index: 3;
+  position: sticky;
+  top: 0;
+  background: #f6faff;
+}
+
+.users_list table th {
+  border: 1px solid #D8E1F3;
+  padding: 20px 30px;
+}
+
+.fio,
+.date {
+  display: flex;
+  align-items: center;
+  cursor: default;
+  justify-content: space-between;
+}
+
+.sort_block {
+  display: flex;
+  align-items: center;
+}
+
+.arrows_block {
+  cursor: pointer;
+  padding: 5px 5px 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.triangle {
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 10px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(213, 222, 240, 1) transparent;
+  transform: rotate(0deg);
+}
+
+.arrow_down {
+  rotate: 180deg;
+  border-color: transparent transparent rgba(167, 183, 216, 1) transparent;
+}
+
+.arrow_up {
+  border-color: transparent transparent rgba(167, 183, 216, 1) transparent;
+}
+
+.cancel_sort {
+  cursor: pointer;
+}
+
+.cancel_sort.invisible {
+  visibility: hidden;
+}
+
+@media (max-width: 360px) {
+  .users_list table th {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .users_list {
+    height: 270px;
+  }
+}

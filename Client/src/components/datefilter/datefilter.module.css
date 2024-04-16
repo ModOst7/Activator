@@ -1,0 +1,156 @@
+.bg_screen {
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.manage_window {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 700px;
+    width: 36%;
+    border: 1px solid #C5D1E9;
+    background: #F6FAFF;
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.10);
+
+    color: #0F2248;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header {
+    padding: 40px 0px 20px 0px;
+    font-size: 24px;
+}
+
+.datefilter_block {}
+
+.datefilter_text {
+    font-weight: 600;
+    text-align: start;
+    margin-left: 57px;
+}
+
+.datefilter_variants {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.datefilter_variant {
+    border: 1px solid #C5D1E9;
+    background: #F3F8FF;
+    padding: 15px 35px;
+    margin-right: -1px;
+}
+
+.datefilter_variant.active {
+    color: #0555FE;
+    background: #E1EDFE;
+}
+
+.datetime_picker {
+    padding: 30px;
+    display: flex;
+    padding: 10px 60px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.datetime_start {
+    margin-right: 20px;
+}
+
+.pickers_text {
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 26px;
+    text-align: start;
+}
+
+.pickers_block {
+    display: flex;
+}
+
+
+
+.triangle {
+    transition: 0.2s;
+    margin-left: 10px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent #A7B7D8 transparent;
+    transform: rotate(0deg);
+}
+
+.button_block {
+    width: 96%;
+    margin: 40px 0 60px 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.datepick_icon {
+    transition: 0.2s;
+    fill: #D5DEF0;
+    width: 26px;
+    height: 26px;
+    right: 12px;
+    top: 14px;
+}
+
+.datepick_icon:hover {
+    fill: #A7B7D8;
+}
+
+.button {
+    width: 72%;
+    margin-right: 25px;
+}
+
+.close_window {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+.closed {
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media (max-width: 360px) {
+    .manage_window {
+        min-width: 360px;
+    }
+
+    .datefilter_variant {
+        padding: 15px 18px;
+    }
+
+    .datetime_picker {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

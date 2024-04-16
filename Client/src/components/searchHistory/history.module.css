@@ -1,0 +1,34 @@
+.root {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #c5d1e9;
+  background: #f3f8ff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;
+  transition: 0.5s;
+}
+
+.linked_history {
+  color: #0555fe;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  display: inline;
+  cursor: pointer;
+}
+
+.show {
+  opacity: 1;
+  z-index: 1;
+}
+
+.hide {
+  opacity: 0;
+  z-index: -1;
+  height: 0;
+  padding: 0;
+  border: 0;
+}

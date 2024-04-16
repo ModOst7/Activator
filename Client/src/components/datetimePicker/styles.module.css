@@ -1,0 +1,139 @@
+.bg_screen {
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.manage_window {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 36%;
+  border: 1px solid #C5D1E9;
+  background: #F6FAFF;
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.10);
+
+  color: #0F2248;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header {
+  padding: 40px 0px 20px 0px;
+  font-size: 24px;
+}
+
+.datetime_picker {
+  padding: 30px;
+  display: flex;
+  padding: 10px 60px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pickers_text {
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 26px;
+}
+
+.pickers_block {
+  display: flex;
+}
+
+.timepicker_block {
+  position: relative;
+  padding: 3px;
+  transition: 0.5s;
+  background: #F6FAFF;
+}
+
+.timepicker_block:has(input:focus) {
+  background: rgba(5, 85, 254, 0.3);
+}
+
+.timepicker_input {
+  border-radius: 0px;
+  border: 1px solid #C5D1E9;
+  background: #F3F8FF;
+  padding: 25px 60px 25px 25px;
+
+  color: #0F2248;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.timepicker_input::-webkit-calendar-picker-indicator {
+  background: none;
+  visibility: hidden;
+}
+
+.timepicker_input:focus {
+  border-radius: 0px;
+  border: 1px solid #0555fe;
+  outline: none;
+}
+
+.triangle {
+  transition: 0.2s;
+  margin-left: 10px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent #A7B7D8 transparent;
+  transform: rotate(0deg);
+}
+
+.button_block {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.datepick_icon {
+  transition: 0.2s;
+  fill: #D5DEF0;
+  width: 26px;
+  height: 26px;
+  right: 12px;
+  top: 14px;
+}
+
+.datepick_icon:hover {
+  fill: #A7B7D8;
+}
+
+.button {}
+
+.close_window {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.closed {
+  visibility: hidden;
+  opacity: 0;
+}

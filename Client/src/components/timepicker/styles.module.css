@@ -1,0 +1,63 @@
+.timepicker_block {
+    position: relative;
+    padding: 3px;
+    transition: 0.5s;
+    background: #F6FAFF;
+}
+
+.timepicker_block:has(input:focus) {
+    background: rgba(5, 85, 254, 0.3);
+}
+
+.timepicker_input {
+    border-radius: 0px;
+    border: 1px solid #C5D1E9;
+    background: #F3F8FF;
+    padding: 25px 60px 25px 25px;
+
+    color: #0F2248;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.timepicker_input::-webkit-calendar-picker-indicator {
+    background: none;
+    visibility: hidden;
+}
+
+.timepicker_input:focus {
+    border-radius: 0px;
+    border: 1px solid #0555fe;
+    outline: none;
+}
+
+.triangle_up,
+.triangle_down {
+    transition: 0.2s;
+    margin-left: 10px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 7px 7px 7px;
+    border-color: transparent transparent rgba(213, 222, 240, 1) transparent;
+    position: absolute;
+    cursor: pointer;
+    transform: rotate(0deg);
+
+    top: 22px;
+    right: 22px;
+}
+
+.triangle_up:hover,
+.triangle_down:hover {
+    border-color: transparent transparent rgba(167, 183, 216, 1) transparent;
+}
+
+.triangle_down {
+    transform: rotate(180deg);
+    top: 47px;
+}

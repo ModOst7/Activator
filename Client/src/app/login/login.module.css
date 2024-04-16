@@ -1,0 +1,98 @@
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../images/background_login.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.card {
+  width: 506px;
+  height: 506px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #c5d1e9;
+  background: #f6faff;
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 60px 60px 40px 60px;
+  margin-right: 2px;
+}
+
+.text_description {
+  color: #0f2248;
+  text-align: center;
+  font-family: Inter;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  user-select: none;
+}
+
+.text_select {
+  color: #0555fe;
+  font-family: Inter;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: inline;
+}
+
+.text {
+  color: #3e3e3e;
+  font-size: 34px;
+}
+
+.input_field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 26px;
+  width: 100%;
+}
+
+.input_field:nth-child(1) {
+  margin-top: 40px;
+}
+
+.button {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.message {
+  margin-top: 15px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  height: 20px;
+  user-select: none;
+}
+
+.message_empty_data {
+  color: #ea7d3f;
+  opacity: 1;
+}
+
+.message_wrong_data {
+  color: #f25c53;
+  opacity: 1;
+}

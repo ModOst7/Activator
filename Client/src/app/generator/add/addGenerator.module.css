@@ -1,0 +1,79 @@
+.label {
+    margin-bottom: 20px;
+
+    font-weight: 600;
+}
+
+.trainer_id_block {
+    width: 27%;
+    font-weight: 600;
+}
+
+.trainer_vendor_block {
+    width: 27%;
+    margin-left: 25px;
+}
+
+.trainer_id {
+    padding: 20px;
+    border: 1px solid #C5D1E9;
+    background: #F3F8FF;
+}
+
+.trainer_name_block {
+    width: 75%;
+    margin-left: 25px;
+}
+
+.buttons_block {
+    width: 20%;
+    margin-left: 25px;
+    margin-top: 37px;
+}
+
+.buttons_block.mobile {
+    display: none;
+}
+
+.input_name {
+    width: 100%;
+}
+
+.input_name input {
+    padding: 20px 25px 20px 25px;
+}
+
+.create_button {
+    height: 62px;
+}
+
+.create_button.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+@media (max-width: 360px) {
+
+    .trainer_id_block {
+        width: 100%;
+    }
+
+    .trainer_name_block {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .label {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .buttons_block {
+        display: none;
+    }
+
+    .buttons_block.mobile {
+        display: block;
+        width: 85%;
+    }
+}

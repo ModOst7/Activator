@@ -1,0 +1,36 @@
+.row {
+    cursor: pointer;
+}
+.row:hover {
+    background-color: #F3F8FF;
+}
+
+.row:hover .td_status {
+    border-left: 1px solid #0555FE;
+}
+
+.row td {
+    border: 1px solid #D8E1F3;
+    padding: 20px 30px;
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+}
+
+.action, .username, .productname {
+    justify-content: flex-start;
+}
+
+.productname {
+    flex-direction: column;
+}
+
+.td_productname {
+    padding-right: 0px !important;
+}
+
+.vendor {
+    font-weight: 600;
+}

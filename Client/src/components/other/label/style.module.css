@@ -1,0 +1,25 @@
+
+.label_hover:hover .label {
+    display: flex;
+}
+
+.label {
+    display: none;
+}
+
+.triangle {
+    width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 0 25px 20px 25px;
+   border-color: transparent transparent #0F2248 transparent;
+   transform: rotate(180deg);
+
+   margin-top: -5px;
+}
+
+.text {
+    background: #0F2248;
+    padding: 10px;
+    height: 40px;
+}

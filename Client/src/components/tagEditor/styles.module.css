@@ -1,0 +1,56 @@
+.wrapper {}
+
+.body {
+    max-height: 445px;
+    overflow-y: auto;
+}
+
+.body::-webkit-scrollbar-track {
+    background: none;
+}
+
+.body::-webkit-scrollbar {
+    width: 8px;
+    margin-left: 20px;
+}
+
+.body::-webkit-scrollbar-thumb {
+    background-color: #0555FE;
+    border-radius: 0px;
+}
+
+.header {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label {
+    font-weight: 600;
+}
+
+.add {
+    color: #0555FE;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.delimeter {
+    background: #E0E7F6;
+    height: 1px;
+}
+
+.empty {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 45vh;
+    color: #A7B7D8;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
